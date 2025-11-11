@@ -6,6 +6,7 @@ export const presentationTypes = [
   "Heat Pump - Air Handler (Good,Better,Best)",
 ];
 
+
 export const presentationExcludeStandalone = [
   "Heat Pump - Furnace (Good,Better,Best)",
   "Heat Pump - Air Handler (Good,Better,Best)",
