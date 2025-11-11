@@ -211,7 +211,7 @@ export default function Forms() {
               // readOnly={true}
             />
 
-            {!isSmartBattery ? (
+            {isSmartBattery ? (
               <>
                 <Input
                   register={register}
@@ -219,7 +219,6 @@ export default function Forms() {
                   api_name="Battery_kWh"
                   label="kWh Battery Capacity"
                   type="number"
-                  readOnly={true}
                 />
               </>
             ) : (
