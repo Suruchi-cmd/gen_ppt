@@ -210,6 +210,7 @@ export default function Forms() {
               type="number"
               // readOnly={true}
             />
+
             {!isSmartBattery ? (
               <>
                 <Input
