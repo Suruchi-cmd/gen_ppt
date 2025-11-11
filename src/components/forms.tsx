@@ -212,15 +212,15 @@ export default function Forms() {
             />
 
             {isSmartBattery ? (
-              <>
-                <Input
-                  register={register}
-                  errors={errors}
-                  api_name="Battery_kWh"
-                  label="kWh Battery Capacity"
-                  type="number"
-                />
-              </>
+              <Input
+                register={register}
+                errors={errors}
+                api_name="Battery_kWh"
+                label="Battery kWh"
+                extraLabel="Enter Battery Size in kWh"
+                type="number"
+                // readOnly={true}
+              />
             ) : (
               <>
                 <Input

@@ -268,7 +268,7 @@ export const formSchema = Yup.object().shape({
 Battery_kWh: Yup.number().min(0,"Value must be a positive number").when("Presentation_Type",(value:string[])=>{
   return smartBattery.includes(value?.[0])
     ? Yup.number()
-        .min(0, "Value must be a positive number")
+        .min(4, "Value must be a positive number")
         .typeError("Please enter a valid number")
         .required("This is a required field")
     : Yup.string();}

@@ -45,5 +45,6 @@ export interface Lead {
   Monthly_Payment_0_2?: string;
   Monthly_Payment_0_1?: string;
   Monthly_Payment_0_3?: string;
+  Battery_kWh?: number;
 
 }
