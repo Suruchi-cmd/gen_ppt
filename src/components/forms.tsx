@@ -210,16 +210,30 @@ export default function Forms() {
               type="number"
               // readOnly={true}
             />
-
-            <Input
-              register={register}
-              errors={errors}
-              api_name="Total_Products"
-              label="Est. Products"
-              extraLabel="(Based on Presentation Type)"
-              type="number"
-              readOnly={true}
-            />
+            {!isSmartBattery ? (
+              <>
+                <Input
+                  register={register}
+                  errors={errors}
+                  api_name="Battery_kWh"
+                  label="kWh Battery Capacity"
+                  type="number"
+                  readOnly={true}
+                />
+              </>
+            ) : (
+              <>
+                <Input
+                  register={register}
+                  errors={errors}
+                  api_name="Total_Products"
+                  label="Est. Products"
+                  extraLabel="(Based on Presentation Type)"
+                  type="number"
+                  readOnly={true}
+                />
+              </>
+            )}
 
             <Input
               register={register}
